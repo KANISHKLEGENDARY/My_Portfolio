@@ -220,29 +220,17 @@ export default function Portfolio() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // EmailJS configuration - Replace these with your actual values
-    const serviceId = 'your_service_id';
-    const templateId = 'your_template_id';
-    const publicKey = 'your_public_key';
+    const subject = encodeURIComponent("Portfolio Contact");
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    );
 
-    const templateParams = {
-      from_name: formData.name,
-      from_email: formData.email,
-      message: formData.message,
-      to_name: 'Kanishk Garg', // Your name
-    };
+    window.location.href = `mailto:kanishk.23@st.niituniversity.com?subject=${subject}&body=${body}`;
 
-    emailjs.send(serviceId, templateId, templateParams, publicKey)
-      .then((response) => {
-        console.log('Email sent successfully!', response.status, response.text);
-        setSent(true);
-        setFormData({ name: "", email: "", message: "" });
-        setTimeout(() => setSent(false), 3000);
-      })
-      .catch((error) => {
-        console.error('Failed to send email:', error);
-        alert('Failed to send message. Please try again or contact directly via email.');
-      });
+    setSent(true);
+    setFormData({ name: "", email: "", message: "" });
+
+    setTimeout(() => setSent(false), 3000);
   };
 
   return (
