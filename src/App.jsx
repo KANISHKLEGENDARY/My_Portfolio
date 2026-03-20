@@ -35,11 +35,10 @@ const PROJECTS = [
   {
     title: "PassOP — A Secure Password Manager",
     description: [
-      "Developed a full-stack password manager enabling users to securely store and manage credentials",
-      "Implemented features to add, edit, and delete stored passwords with seamless real-time UI updates",
-      "Designed RESTful APIs for efficient client–server communication and integrated MongoDB for secure data storage",
-      "Used UUID-based unique identifiers for reliable credential management and record handling",
-      "Built a clean, responsive interface using Tailwind CSS for improved user experience"
+      "Full-stack password manager with secure credential storage",
+      "Real-time UI updates for adding, editing, and deleting passwords",
+      "RESTful APIs with MongoDB integration for data persistence",
+      "UUID-based system for reliable credential management"
     ],
     tech: ["React", "Node.js", "MongoDB", "Tailwind CSS", "REST APIs", "UUID"],
     featured: true,
@@ -51,9 +50,10 @@ const PROJECTS = [
   {
     title: "Bharatiya Antariksha Hackathon — Air Pollution Prediction",
     description: [
-      "Developed an ML pipeline to predict PM2.5 and PM10 levels using Random Forest models",
-      "Collected and merged multi-source air pollution datasets from NASA MERRA-2, ISRO INSAT satellite AOD, and CPCB ground monitoring stations for the Faridabad region",
-      "Performed extensive preprocessing, feature engineering, and model evaluation for accurate pollution forecasts"
+      "ML pipeline using Random Forest for PM2.5/PM10 prediction",
+      "Integrated NASA MERRA-2, ISRO INSAT, and CPCB datasets",
+      "Comprehensive preprocessing and feature engineering",
+      "Accurate air pollution forecasting for Faridabad region"
     ],
     tech: ["Python", "Random Forest", "Pandas", "Scikit-learn", "NASA MERRA-2", "ISRO INSAT"],
     featured: false,
@@ -65,10 +65,10 @@ const PROJECTS = [
   {
     title: "Air Pollution Forecasting Dashboard (Ongoing R&D Project)",
     description: [
-      "Extended hackathon research into an R&D project using Gradient Boosting Regression",
-      "Achieved 96% prediction accuracy after hyperparameter tuning",
-      "Built a dashboard for visualizing pollutant trends and real-time air quality indicators",
-      "Implemented a carbon credit estimation feature to evaluate environmental impact"
+      "Extended hackathon work with Gradient Boosting Regression",
+      "Achieved 96% prediction accuracy through optimization",
+      "Interactive dashboard for pollutant trend visualization",
+      "Carbon credit estimation for environmental impact assessment"
     ],
     tech: ["Python", "Gradient Boosting", "Dashboard", "Data Visualization", "Carbon Credits"],
     featured: false,
@@ -80,11 +80,11 @@ const PROJECTS = [
   {
     title: "Autonomous AI Workflow Engine (Ongoing Capstone Project)",
     description: [
-      "Building an autonomous AI agent that converts high-level goals into executable workflows",
-      "Designed architecture combining Open WebUI, LangChain, and Gemini 1.5 Pro",
-      "Implemented multimodal perception using Qwen3-VL via Ollama",
-      "Developed a custom Chrome Extension enabling automated browser interaction",
-      "Integrated a sandboxed Python execution engine for running generated scripts and APIs"
+      "Building autonomous AI agent for goal-to-workflow conversion",
+      "Architecture combining Open WebUI, LangChain, and Gemini 1.5 Pro",
+      "Multimodal perception using Qwen3-VL via Ollama integration",
+      "Custom Chrome Extension for automated browser interaction",
+      "Sandboxed Python execution environment for script and API running"
     ],
     tech: ["Python", "LangChain", "Gemini 1.5 Pro", "Ollama", "Chrome Extension", "Open WebUI"],
     featured: false,
@@ -571,7 +571,7 @@ export default function Portfolio() {
       {/* Footer */}
       <footer style={{ borderTop: "1px solid rgba(255,255,255,0.06)", padding: "24px 2rem", textAlign: "center", position: "relative", zIndex: 1 }}>
         <p style={{ fontSize: 12, color: "rgba(255,255,255,0.25)", fontFamily: "'Courier New',monospace" }}>
-          Crafted with ❤️ · Kanishk Garg · 2025
+          Crafted with ❤️ · Kanishk Garg · 2026
         </p>
       </footer>
 
