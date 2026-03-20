@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect, useCallback } from "react";
-import emailjs from '@emailjs/browser';
 
 const NAV_LINKS = ["Home", "About", "Skills", "Projects", "Contact"];
 
@@ -210,11 +209,6 @@ export default function Portfolio() {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  // Initialize EmailJS
-  useEffect(() => {
-    emailjs.init('your_public_key'); // Replace with your actual public key
   }, []);
 
   const scrollTo = (section) => {
