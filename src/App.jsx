@@ -95,9 +95,8 @@ const PROJECTS = [
 ];
 
 const SOCIAL = [
-  { name: "GitHub", icon: "GH", url: "#" },
-  { name: "LinkedIn", icon: "in", url: "#" },
-  { name: "Twitter", icon: "Tw", url: "#" },
+  { name: "GitHub", icon: "GH", url: "https://github.com/KANISHKLEGENDARY" },
+  { name: "LinkedIn", icon: "in", url: "https://www.linkedin.com/in/kanishk-garg-7b120936b/" },
 ];
 
 
